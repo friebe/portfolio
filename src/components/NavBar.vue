@@ -5,7 +5,7 @@
       focusable="false"
       to="/"
     >
-      <img v-show="!isDark" src="/logo.svg" alt="logo">
+      <span>Jan Friebe</span>
     </router-link>
     <nav class="nav">
       <div class="spacer" />
