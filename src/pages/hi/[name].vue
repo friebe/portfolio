@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 import { defineProps } from 'vue'
 
 const props = defineProps({
@@ -11,7 +10,7 @@ const props = defineProps({
 })
 
 const router = useRouter()
-const { t } = useI18n()
+
 </script>
 
 <template>
@@ -20,10 +19,10 @@ const { t } = useI18n()
       <carbon-pedestrian class="inline-block" />
     </p>
     <p>
-      {{ t('intro.hi', { name: props.name }) }}
+      {{ ('intro.hi', { name: props.name }) }}
     </p>
     <p class="text-sm opacity-50">
-      <em>{{ t('intro.dynamic-route') }}</em>
+      <em>{{ ('intro.dynamic-route') }}</em>
     </p>
 
     <div>
